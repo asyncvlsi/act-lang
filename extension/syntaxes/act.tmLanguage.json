@@ -62,23 +62,6 @@
 				}
 			]
 		},
-		"bitwidths": {
-			"name": "storage.type.act",
-			"begin": "(?!<<)<(?<!<<)",
-			"end": "(?!->)>(?<!->)",
-			"patterns": [
-				{
-					"include": "#constants"
-				},
-				{
-					"name": "keyword.control.act",
-					"match": "\\b(pint|preal)\\b"
-				},
-				{
-					"include": "#variables"
-				}
-			]
-		},
 		"variables": {
 			"match": "([a-zA-Z_][A-Za-z_0-9]*)",
 			"name": "variable.name.act"
@@ -96,7 +79,7 @@
 			"name": "keyword.operator.act"
 		},
 		"comps": {
-			"match": "([=](?![=>])|!=|>|>=|<=)",
+			"match": "([=](?![=>])|!=|>|<|>=|<=)",
 			"name": "keyword.operator.act"
 		},
 		"accesses_and_impl": {
