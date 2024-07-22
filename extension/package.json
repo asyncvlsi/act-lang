@@ -1,0 +1,26 @@
+{
+  "name": "act-lang",
+  "publisher": "KarthiSrinivasan",
+  "displayName": "ACT",
+  "description": "Basic syntax highlighting for ACT",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "act",
+      "aliases": ["ACT", "act"],
+      "extensions": [".act"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "act",
+      "scopeName": "source.act",
+      "path": "./syntaxes/act.tmLanguage.json"
+    }]
+  }
+}

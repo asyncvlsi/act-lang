@@ -1,0 +1,119 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ACT",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+		,
+		{
+			"include": "#accesses_and_impl"
+		},
+		{
+			"include": "#ops"
+		}
+		,
+		{
+			"include": "#comps"
+		}
+		,
+		{
+			"include": "#bitwidths"
+		}
+		,
+		{
+			"include": "#boolconstants"
+		}
+		,
+		{
+			"include": "#variables"
+		}
+		,
+		{
+			"include": "#constants"
+		}
+		,
+		{
+			"include": "#commentblocks"
+		}
+		,
+		{
+			"include": "#commentlines"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.act",
+				"match": "\\b(import|open|template|export|namespace|defproc|defcell|defchan|deftype|methods|set|get|send_up|recv_up|send_rest|recv_rest|send_probe|recv_probe|interface|skip|else|bool|int|pint|preal|pbool|ptype|chan|enum|chp|prs|Vdd|GND|passp|passn|keeper|cap|hse|dataflow|dataflow_cluster|order|refine|sizing|spec|timing|function|self|log|exclhi|excllo|mk_exclhi|mk_exclhi)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.act",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.act",
+					"match": "\\\\."
+				}
+			]
+		},
+		"bitwidths": {
+			"name": "storage.type.act",
+			"begin": "(?!<<)<(?<!<<)",
+			"end": "(?!->)>(?<!->)",
+			"patterns": [
+				{
+					"include": "#constants"
+				},
+				{
+					"name": "keyword.control.act",
+					"match": "\\b(pint|preal)\\b"
+				},
+				{
+					"include": "#variables"
+				}
+			]
+		},
+		"variables": {
+			"match": "([a-zA-Z_][A-Za-z_0-9]*)",
+			"name": "variable.name.act"
+		},
+		"constants": {
+			"match": "([0-9]+)",
+			"name": "constant.numeric.act"
+		},
+		"boolconstants": {
+			"match": "\\b(true|false)\\b",
+			"name": "constant.language.act"
+		},
+		"ops": {
+			"match": "(\\~|&|(\\^)|([|](?!\\])(?<!\\[\\|))|[#](?![#>])|\\+|[\\-](?![\\-\\>])|>>|<<|:=|[\\/](?![\\/\\/|\\/\\*])|[\\*](?![\\*\\/|\\*\\[])|%|\\!|[\\?]|\\.\\.)",
+			"name": "keyword.operator.act"
+		},
+		"comps": {
+			"match": "([=](?![=>])|!=|>|>=|<=)",
+			"name": "keyword.operator.act"
+		},
+		"accesses_and_impl": {
+			"match": "->|<-|[\\.](?![(\\.\\.)|[0-9]])|::|<:|=>|#>",
+			"name": "markup.heading.act"
+		},
+		"commentblocks": {
+			"name": "comment.block.act",
+			"begin": "/\\*",
+			"end": "\\*/"
+		},
+		"commentlines": {
+			"name": "comment.line.double-slash.act",
+			"begin": "//",
+			"end": "\n"
+		}
+
+	},
+	"scopeName": "source.act"
+}
