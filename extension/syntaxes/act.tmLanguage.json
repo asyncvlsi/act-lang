@@ -48,7 +48,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.act",
-				"match": "\\b(import|open|template|export|namespace|defproc|defcell|defchan|deftype|methods|set|get|send_up|recv_up|send_rest|recv_rest|send_probe|recv_probe|interface|skip|else|bool|int|pint|preal|pbool|ptype|chan|enum|chp|prs|Vdd|GND|passp|passn|keeper|cap|hse|dataflow|dataflow_cluster|order|refine|sizing|spec|timing|function|self|log|exclhi|excllo|mk_exclhi|mk_exclhi)\\b"
+				"match": "\\b(import|open|template|export|namespace|defproc|defcell|defchan|deftype|defenum|methods|set|get|send_up|recv_up|send_rest|recv_rest|send_probe|recv_probe|interface|skip|else|bool|int|pint|preal|pbool|ptype|chan|enum|chp|prs|Vdd|GND|passp|passn|keeper|cap|hse|dataflow|dataflow_cluster|order|refine|sizing|spec|timing|function|self|log|exclhi|excllo|mk_exclhi|mk_exclhi|transgate|macro|chp-txt|)\\b"
 			}]
 		},
 		"strings": {
