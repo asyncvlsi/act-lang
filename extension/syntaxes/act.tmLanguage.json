@@ -11,17 +11,14 @@
 		,
 		{
 			"include": "#accesses_and_impl"
-		},
+		}
+		,
 		{
 			"include": "#ops"
 		}
 		,
 		{
 			"include": "#comps"
-		}
-		,
-		{
-			"include": "#bitwidths"
 		}
 		,
 		{
@@ -48,7 +45,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.act",
-				"match": "\\b(import|open|template|export|namespace|defproc|defcell|defchan|deftype|defenum|methods|set|get|send_up|recv_up|send_rest|recv_rest|send_probe|recv_probe|interface|skip|else|bool|int|pint|preal|pbool|ptype|chan|enum|chp|prs|Vdd|GND|passp|passn|keeper|cap|hse|dataflow|dataflow_cluster|order|refine|sizing|spec|timing|function|self|log|exclhi|excllo|mk_exclhi|mk_exclhi|transgate|macro|chp-txt|)\\b"
+				"match": "\\b(import|open|template|export|namespace|defproc|defcell|defchan|deftype|defenum|methods|set|get|send_up|recv_up|send_rest|recv_rest|send_probe|recv_probe|interface|skip|else|bool|int|pint|preal|pbool|ptype|chan|enum|chp|prs|Vdd|GND|passp|passn|keeper|cap|hse|dataflow|dataflow_cluster|order|refine|sizing|spec|timing|function|self|log|exclhi|excllo|mk_exclhi|mk_exclhi|transgate|macro|chp-txt)\\b"
 			}]
 		},
 		"strings": {
@@ -63,11 +60,11 @@
 			]
 		},
 		"variables": {
-			"match": "([a-zA-Z_][A-Za-z_0-9]*)",
+			"match": "\\b([a-zA-Z_][A-Za-z_0-9]*)\\b",
 			"name": "variable.name.act"
 		},
 		"constants": {
-			"match": "([0-9]+)",
+			"match": "\\b(([0-9]+)|([0][xX][0-9A-Fa-f]+)|([0][bB][0-1]+))\\b",
 			"name": "constant.numeric.act"
 		},
 		"boolconstants": {
@@ -96,7 +93,6 @@
 			"begin": "//",
 			"end": "\n"
 		}
-
 	},
 	"scopeName": "source.act"
 }
