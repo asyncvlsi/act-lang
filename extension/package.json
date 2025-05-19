@@ -3,7 +3,7 @@
   "publisher": "KarthiSrinivasan",
   "displayName": "ACT",
   "description": "Basic syntax highlighting for ACT",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.91.0"
   },
@@ -25,6 +25,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/karthisrinivasan/act-lang.git"
+    "url": "https://github.com/asyncvlsi/act-lang.git"
   }
 }
