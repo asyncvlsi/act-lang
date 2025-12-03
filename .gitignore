@@ -2,3 +2,4 @@
 *.act
 *.vsix
 .actsim_history
+node_modules
