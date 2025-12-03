@@ -3,5 +3,5 @@
 
 ## Publishing a New Version
 - Change the publisher in `extension/package.json` and follow instructions here: https://code.visualstudio.com/api/working-with-extensions/publishing-extension
-- Add Azure DevOps PAT is it has expired.
+- Add Azure DevOps PAT if it has expired.
 - Just `vsce package` and `vsce publish`.
