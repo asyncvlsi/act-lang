@@ -3,7 +3,7 @@
   "publisher": "KarthiSrinivasan",
   "displayName": "ACT",
   "description": "Basic syntax highlighting for ACT",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.91.0"
   },
@@ -15,6 +15,10 @@
       "id": "act",
       "aliases": ["ACT", "act"],
       "extensions": [".act", ".actx"],
+      "icon": {
+        "light": "./icons/act-file.svg",
+        "dark": "./icons/act-file.svg"
+      },
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{

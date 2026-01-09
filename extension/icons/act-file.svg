@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <text x="70" y="84"
+        text-anchor="middle"
+        font-family="Segoe UI, Arial, sans-serif"
+        font-size="54"
+        font-weight="800"
+        fill="#2fa7dfff"
+        stroke="#2fa7dfff"
+        stroke-width="2"
+        paint-order="stroke fill"
+        letter-spacing="0.5">ACT</text>
+</svg>
